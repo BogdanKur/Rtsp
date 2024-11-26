@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main"
+    tools:context=".MainFragment"
+    android:padding="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvDevice"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinDevice"
+            android:gravity="center|start"
+            android:layout_marginStart="70dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_spinner_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginVertical="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvRotation"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinRotation"
+            android:gravity="center|start"
+            android:layout_marginStart="50dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_spinner_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvResolution"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinResolution"
+            android:gravity="center|start"
+            android:layout_marginStart="25dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_spinner_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvColorMode"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+        <RadioGroup
+            android:layout_marginStart="15dp"
+            android:id="@+id/color_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:textColor="@color/white"
+                android:id="@+id/radio_rgb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvRGB"/>
+
+            <RadioButton
+                android:textColor="@color/white"
+                android:id="@+id/radio_bgr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvBGR"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnSend"
+            android:textSize="21sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_background"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="@string/btnSend"/>
+        <Button
+            android:id="@+id/btnGet"
+            android:textSize="21sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_background"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="@string/btnGet"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rtsp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvDevice">Device:</string>
+    <string name="tvRotation">Rotation:</string>
+    <string name="tvResolution">Resolution:</string>
+    <string name="tvColorMode">Color mode:</string>
+    <string name="tvRGB">RGB</string>
+    <string name="tvBGR">BGR</string>
+    <string name="btnSend">Send</string>
+    <string name="btnGet">Get</string>
+</resources>
